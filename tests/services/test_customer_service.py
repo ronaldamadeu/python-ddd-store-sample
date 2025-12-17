@@ -46,5 +46,6 @@ async def test_should_raise_error_duplicated_customer():
         zip_code="12345"
     )
     customer_duplicated = CustomerRegistration(name="John Doe", email="email@example.com", Address=address)    
-    with pytest.raises(EmailAlreadyExistsException):
+    with pytest.raises(EmailAlreadyExistsException) as error:
         await service.register(customer_duplicated)
+    assert str(error.value) == "Email already exists"
