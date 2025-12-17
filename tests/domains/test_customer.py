@@ -1,4 +1,4 @@
-from src.domain.customer import Address, Customer
+from src.domains.customer import Address, Customer
 
 def test_should_creaete_customer():
     address: Address = Address(

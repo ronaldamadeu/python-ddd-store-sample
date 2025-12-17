@@ -1,4 +1,4 @@
-from src.domain.base import DomainBase
+from src.domains.base import DomainBase
 from pydantic import BaseModel, Field
 
 class Address(BaseModel):
@@ -12,3 +12,7 @@ class Customer(DomainBase):
     email: str
     address: Address
     
+class CustomerRegistration(BaseModel):
+    name: str
+    email: str
+    Address: Address

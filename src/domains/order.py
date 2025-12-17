@@ -1,8 +1,8 @@
 from enum import Enum
 from uuid import UUID
-from src.domain.customer import Customer
+from src.domains.customer import Customer
 from pydantic import BaseModel, Field
-from src.domain.base import DomainBase
+from src.domains.base import DomainBase
 
 class OrderStatusName(str, Enum):
     ACCOMPLISHED = "ACCOMPLISHED"

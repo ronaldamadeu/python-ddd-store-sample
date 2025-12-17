@@ -1,6 +1,6 @@
-from src.domain.customer import Address, Customer
-from src.domain.product import Product
-from src.domain.order import Order, OrderItem, OrderStatus, OrderStatusName
+from src.domains.customer import Address, Customer
+from src.domains.product import Product
+from src.domains.order import Order, OrderItem, OrderStatus, OrderStatusName
 
 def test_should_creaete_order():
     address: Address = Address(

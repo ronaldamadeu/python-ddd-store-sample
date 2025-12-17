@@ -1,4 +1,4 @@
-from src.domain.product import Product
+from src.domains.product import Product
 
 def test_should_creaete_product():
     product: Product = Product(
